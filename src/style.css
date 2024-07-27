@@ -1,1 +1,96 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 50%;
+}
+
+.valor {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.palo {
+  font-size: 60px;
+  margin: 2px;
+}
+
+body {
+  background-color: rgb(13, 195, 0);
+}
+
+.divPalo1 {
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+.divValor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+.divPalo2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  transform: rotateX(180deg);
+  margin: 2px;
+}
+
+.temporizador {
+  width: 20%;
+  height: 13%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.spade::before {
+  content: "♠";
+  color: black;
+}
+
+.club::before {
+  content: "♣";
+  color: rgb(255, 0, 0);
+}
+
+.heart::before {
+  content: "♥";
+  color: red;
+}
+
+.diamond::before {
+  content: "♦";
+  color: rgb(0, 0, 0);
+}
+.sliderDiv {
+  margin-top: 2%;
+}
+.sliderLabel {
+  display: block;
+  margin-bottom: 0.5%;
+}
+.slider {
+  width: 100%;
+}
+
+/* div {
+  border: solid greenyellow;
+} */
+
+.divFunciones {
+  padding: 10px;
+}

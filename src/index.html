@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
+    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div id="carta" class="card">
+      <div class="palo divPalo1" id="palo1"></div>
+      <div class="valor divValor" id="valor"></div>
+      <div class="palo divPalo2" id="palo2"></div>
+    </div>
+    <div>
+</div>
+    <div class="divFunciones">
+      <div style="margin: 30px;">
+        <h1 style="color: rgb(255, 0, 0); display: inline;">♥</h1>
+        <h1 style="color: rgb(255, 0, 0); display: inline;">♦</h1>
+        <h1 style="color: rgb(255, 255, 255); display: inline;">
+          GENERADOR DE CARTAS ALEATORIAS
+        </h1>
+        <h1 style="display: inline;">♠ ♣</h1>
+        <h2 style="color: rgb(0, 0, 0);">
+          Se Genera Automaticamente Una Carta Nueva En 10s
+        </h2>
+      </div>
+      <div style="margin-left: 180px;">
+        <button
+          id="cambiarCarta"
+          style="margin: 30px; font-size: 30px; border-radius: 10px;"
+        >
+          Generar Carta
+        </button>
+        <div id="temporizador" class="temporizador" style="margin: 30px;"></div>
+        <div id="sliderDiv" style="margin: 30px;">
+          <h2 style="color: rgb(0, 0, 0);">Cambia El Tamaño De La Carta</h2>
+          <label
+            for="sliderAncho"
+            class="sliderLabel"
+            style="color: rgb(255, 255, 255);"
+            >Ancho:</label
+          >
+          <input
+            type="range"
+            id="sliderAncho"
+            min="257"
+            max="400"
+            value="600"
+          />
+          <label for="sliderAlto" class="sliderLabel" style="color: rgb(255, 255, 255);"">Alto:</label>
+          <input type="range" id="sliderAlto" min="257" max="400" value="600" />
+        </div>
       </div>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
+
